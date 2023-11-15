@@ -5,7 +5,11 @@ In 2019 One Data Model (OneDM) was started to bring several IoT SDOs and IoT dev
 
 As a common language for writing down these models, the Semantic Definition Format went through the IETF process, producing (draft-ietf-asdf-sdf).  This initial SDF Base document has now reached WG Consensus, to be published.  SDF represents these models in JSON, enabling re-use of specification formats such as CDDL (RFC8610) and the formats proposed at json-schema.org and their tooling, for describing both the SDF format itself and the structure of the data to be modelled in SDF.
 
-SDF does not deal directly with serialization at all, modelling only the structure and semantics of the data being interchanged, hence leaving data serialization (and RPC semantics) to other standards, most likely defined by existing IoT SDOs.
+While SDF does not specify seriailizations, there may be opportunities
+to indicate when an SDF-aligned model is in use by a device or
+component, thus providing an opportunity for tooling to know when a
+mapping through SDF between models may be appropriate.  The actual
+serialization of specific models is left to others.
 
 The ASDF Working Group
 ----------------------
@@ -15,4 +19,7 @@ The ASDF has developped SDF into a standards-track specification for thing inter
 The ASDF WG will work with experts from OneDM and its contributing organizations to extend SDF to cover aspects such as digital twin, mapping to other IoT SDOs, and gateway interactions translations between IP and other transports.
 
 As work evolves, it will interact with the IRTF formal description techniques (FDT) Research Group.  ASDF will work with Thing-to-Thing Research Group (T2TRG) and its WISHI (Work on IoT Semantic/Hypermedia Interoperability, http://wishi.space) program to engage researchers and other SDOs in this space, such as W3C Web of Things, which is working on Thing Models and related specifications.
+
+ASDF may also specify non-IP communication channels that carry serializations
+of models that are mapped to SDF.
 
