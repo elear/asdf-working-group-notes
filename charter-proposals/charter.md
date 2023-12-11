@@ -20,6 +20,5 @@ The ASDF WG will work with experts from OneDM and its contributing organizations
 
 As work evolves, it will interact with the IRTF formal description techniques (FDT) Research Group.  ASDF will work with Thing-to-Thing Research Group (T2TRG) and its WISHI (Work on IoT Semantic/Hypermedia Interoperability, http://wishi.space) program to engage researchers and other SDOs in this space, such as W3C Web of Things, which is working on Thing Models and related specifications.
 
-ASDF may also specify non-IP communication channels that carry serializations
-of models that are mapped to SDF.
+To bridge gaps between non-IP devices and IP-based control functions, ASDF may also specify non-IP communication channels that carry serializations of models that are mapped to SDF.
 
